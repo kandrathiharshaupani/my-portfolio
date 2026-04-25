@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harshaupani Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0b0b0b;
+    color:#fff;
+}
+
+/* Navbar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    padding:20px 50px;
+    background:#000;
+}
+nav h2{ color:orange; }
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+nav ul li{ margin:0 15px; }
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+nav ul li a:hover{ color:orange; }
+
+/* Hero */
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px 50px;
+}
+.hero-text{ max-width:50%; }
+
+.hero-text h1{
+    font-size:45px;
+}
+.hero-text span{ color:orange; }
+
+.hero-text p{
+    margin:20px 0;
+    color:#ccc;
+}
+
+.btn{
+    padding:10px 20px;
+    margin-right:10px;
+    border:none;
+    cursor:pointer;
+}
+.btn-primary{
+    background:orange;
+    color:black;
+}
+.btn-outline{
+    border:1px solid orange;
+    background:transparent;
+    color:orange;
+}
+
+/* About */
+.about{
+    display:flex;
+    padding:60px 50px;
+    gap:40px;
+}
+.skills{ margin-top:20px; }
+
+.skill{ margin-bottom:15px; }
+
+.skill-bar{
+    height:8px;
+    background:#333;
+    border-radius:5px;
+}
+.skill-bar div{
+    height:100%;
+    background:orange;
+}
+
+/* Projects */
+.projects{
+    padding:60px 50px;
+    text-align:center;
+}
+.project-box{
+    display:inline-block;
+    width:250px;
+    margin:15px;
+    padding:20px;
+    background:#111;
+    border-radius:10px;
+}
+.project-box:hover{
+    background:orange;
+    color:black;
+}
+
+/* Contact */
+.contact{
+    text-align:center;
+    padding:50px;
+}
+footer{
+    text-align:center;
+    padding:20px;
+    background:#000;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+    <h2>Codr</h2>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Hi, I'm <span>Harshaupani</span></h1>
+        <p>1st Year Computer Engineering Student passionate about building simple and useful software.</p>
+        <button class="btn btn-primary">Download CV</button>
+        <button class="btn btn-outline">Hire Me</button>
+    </div>
+</section>
+
+<!-- About -->
+<section class="about">
+    <div>
+        <h2>About Me</h2>
+        <p>
+            I am a first-year Computer Engineering student with knowledge in C and basic C++.
+            I enjoy learning new technologies and building small projects that solve real problems.
+        </p>
+
+        <div class="skills">
+            <div class="skill">
+                <p>C Programming</p>
+                <div class="skill-bar"><div style="width:85%"></div></div>
+            </div>
+
+            <div class="skill">
+                <p>Basic C++</p>
+                <div class="skill-bar"><div style="width:70%"></div></div>
+            </div>
+
+            <div class="skill">
+                <p>AutoCAD</p>
+                <div class="skill-bar"><div style="width:60%"></div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section class="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-box">
+        <h3>Bank Management System</h3>
+        <p>Developed using C language to manage accounts and transactions.</p>
+    </div>
+
+    <div class="project-box">
+        <h3>Basic Calculator</h3>
+        <p>A simple calculator built using C programming concepts.</p>
+    </div>
+
+</section>
+
+<!-- Learning -->
+<section class="projects">
+    <h2>Currently Learning</h2>
+
+    <div class="project-box">Data Structures</div>
+    <div class="project-box">Web Development</div>
+    <div class="project-box">System Design</div>
+</section>
+
+<!-- Contact -->
+<section class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: kandrathiharshaupani@gmail.com</p>
+</section>
+
+<footer>
+    <p>© 2026 Harshaupani | Portfolio</p>
+</footer>
+
+</body>
+</html>
